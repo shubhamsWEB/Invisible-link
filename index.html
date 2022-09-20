@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-links { 
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        a:not(.skip-link):focus {
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        .skip-link {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background-color: gray;
+            color: white;
+            padding: .5rem;
+            translate: 0 -100%;
+            transform: translate 100ms ease-in-out;
+        }
+        .skip-link:focus {
+            translate: 0
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="skip-link" href="#main-content">Skip to main content</a>
+        <a class="skip-link" href="#footer-content">Skip to footer</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section>
+            <h1>Title</h1>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio <a href="#">officiis</a> aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                </p>
+                <ol>
+                    <li><a href="#">link-1</a></li>
+                    <li><a href="#">link-2</a></li>
+                    <li><a href="#">link-3</a></li>
+                    <li><a href="#">link-4</a></li>
+                    <li><a href="#">link-5</a></li>
+                    <li><a href="#">link-6</a></li>
+                    <li><a href="#">link-7</a></li>
+                    <li><a href="#">link-8</a></li>
+                </ol>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa magnam cupiditate
+                    perspiciatis, corrupti fugit architecto corporis doloremque odio officiis aut rerum natus, autem
+                    saepe dicta voluptates ex animi optio!
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer id="footer-content">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
